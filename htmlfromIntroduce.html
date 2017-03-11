@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>表单元素的使用介绍</title>
+  </head>
+  <body>
+    <div class="register">
+	  <form action="/user/register" method="post">
+	    <div class="username">
+		  <label for="username">用户名：</label>
+		  <input id="username" name="username" type="text" value="">
+		</div>
+		<div class="pwd">
+		  <label for="pwd">密码：</label>
+		  <input id="pwd" name="pwd" type="password" value="">
+		</div>
+		<div class="sex">
+		  <label><input id="man" name="sex" type="radio" value="man" checked>男</label>
+		  <label><input id="woman" name="sex" type="radio" value="woman" checked>女</label>
+		</div>
+		<div class="hobby">
+		  <label><input name="hobby" value="2">看书</label>
+		  <label><input name="hobby" value="4">listen music</label>
+		  <label><input name="hobby" value="6">游泳</label>
+		</div>
+		<div class="birthplace">
+		  <select name="birthplace">
+		    <option>北京</option>
+			<option>上海</option>
+			<option>深圳</option>
+		  </select>
+		</div>
+		<div class="other">
+		  <textarea name="other"></textarea>
+		</div>
+		<div>
+	      <input type="hidden" name="viewstate" value="">
+		</div>
+		<div class="button">
+		  <input type="button" value="button">
+		  <input type="submit" value="submit">
+		  <input type="reset" value="reset">
+		</div>
+	  </form>
+	</div>
+  </body>
+</html>
